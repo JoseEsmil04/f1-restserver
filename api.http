@@ -1,0 +1,33 @@
+### Todos los equipos de F1
+GET http://localhost:3001/api/formula1
+### Equipo de F1 por id
+GET http://localhost:3001/api/formula1/13
+### Create F1 team
+POST http://localhost:3001/api/formula1
+Content-Type: application/json
+
+{
+  "name": "Red Bull",
+  "drivers": "Sergio Perez, Max Verstappen",
+  "champions": 7
+}
+
+### Create F1 team
+POST http://localhost:3001/api/formula1
+Content-Type: application/x-www-form-urlencoded
+
+name=Lamborghini&drivers=Jazmin, Robert&champions=1
+
+### Update f1 team
+PUT http://localhost:3001/api/formula1/20
+Content-Type: application/json
+
+{
+  "id": 24,
+  "name": "Paco Racing",
+  "drivers": "Julito, Starlin",
+  "champions": 16
+}
+
+### Delete F1 team
+DELETE http://localhost:3001/api/formula1/1
