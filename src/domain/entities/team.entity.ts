@@ -1,12 +1,5 @@
 
-
 export class TeamEntity {
-
-  // "id": 2,
-  // "name": "Coca Cola Team F1",
-  // "drivers": "Jose Esmil, Jecx Greka",
-  // "champions": 7
-
   constructor(
     public readonly id: number,
     public readonly name: string,

@@ -2,8 +2,6 @@ import { CreateTeamDto, UpdateTeamZod } from "../dtos";
 import { TeamEntity } from "../entities/team.entity";
 
 
-
-
 export abstract class TeamRepository {
   abstract getAllTeams(): Promise<TeamEntity[]>
   abstract getTeam(id: number): Promise<TeamEntity>

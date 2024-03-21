@@ -2,8 +2,6 @@ import { UpdateTeamZod } from "../dtos";
 import { TeamEntity } from "../entities/team.entity";
 import { TeamRepository } from "../repositories/team.repository";
 
-
-
 export interface UpdateTeamUseCase {
   execute(updateTeamZod: UpdateTeamZod): Promise<TeamEntity>
 }

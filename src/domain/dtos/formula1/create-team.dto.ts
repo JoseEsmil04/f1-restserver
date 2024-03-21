@@ -4,10 +4,6 @@
 
 export class CreateTeamDto {
 
-  // "name": "Mercedes",
-    // "drivers": "Lewis Hamilton, Valtteri Bottas",
-    // "champions": 7
-
   private constructor(
     public readonly name: string,
     public readonly drivers: string,

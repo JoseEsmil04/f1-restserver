@@ -8,7 +8,7 @@ export class AppRoutes {
     const router = Router()
 
     router.use('/api/formula1', FormulaRoutes.routes)
-
+    // Se pueden agregar mas rutas a futuro...
 
     return router
   }

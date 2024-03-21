@@ -1,8 +1,6 @@
 import { TeamEntity } from "../entities/team.entity";
 import { TeamRepository } from "../repositories/team.repository";
 
-
-
 export interface GetTeamsUseCase {
   execute(): Promise<TeamEntity[]>
 }

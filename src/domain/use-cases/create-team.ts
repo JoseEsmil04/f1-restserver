@@ -3,7 +3,6 @@ import { TeamEntity } from "../entities/team.entity";
 import { TeamRepository } from "../repositories/team.repository";
 
 
-
 export interface CreateTeamUseCase {
   execute(createTeamDto: CreateTeamDto): Promise<TeamEntity>
 }

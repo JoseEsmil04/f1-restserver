@@ -16,7 +16,7 @@ Content-Type: application/json
 POST http://localhost:3001/api/formula1
 Content-Type: application/x-www-form-urlencoded
 
-name=Lamborghini&drivers=Jazmin, Robert&champions=1
+name=Lamborghini Racing&drivers=Jazmin, Esmil&champions=1
 
 ### Update f1 team
 PUT http://localhost:3001/api/formula1/20
@@ -25,7 +25,7 @@ Content-Type: application/json
 {
   "id": 24,
   "name": "Paco Racing",
-  "drivers": "Julito, Starlin",
+  "drivers": "Joselito, Olivia",
   "champions": 16
 }
 
