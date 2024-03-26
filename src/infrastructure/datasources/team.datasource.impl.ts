@@ -1,5 +1,5 @@
 import { prisma } from "../../data/postgres";
-import { TeamDatasource, TeamEntity } from "../../domain";
+import { ErrorController, TeamDatasource, TeamEntity } from "../../domain";
 import { CreateTeamDto, UpdateTeamZod } from "../../domain/dtos";
 
 
@@ -17,7 +17,11 @@ export class TeamDatasourceImpl implements TeamDatasource {
 			}
 		})
 
-    if(!team) throw `Team with id: ${id} not found!!!`
+    if (isNaN(id)) {
+			throw new ErrorController('ID arg is not a number!', 400)
+		}
+
+    if(!team) throw new ErrorController(`Team with id: ${id} not found!`, 404)
 
     return TeamEntity.fromObject(team)
   }
